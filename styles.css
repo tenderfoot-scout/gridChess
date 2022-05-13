@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/ca/cc/77/cacc77b15424a4540112e61bab0baa69.jpg");
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-image: url("https://w0.peakpx.com/wallpaper/135/982/HD-wallpaper-hogwarts-legacy-harry-harry-potter-potter.jpg");
+    background-size: 100%;
+  }
+}
+
+/* Nav */
+.navbar {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 1%;
+  background-image: url("https://media.istockphoto.com/photos/black-wood-texture-background-old-panels-wooden-texture-picture-id958635646?k=20&m=958635646&s=612x612&w=0&h=SeVW4d3tpNzPxtneTR5QKnuC2FhuvS8KNfgBTLjBy0Q=");
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+}
+
+.image {
+  width: 80px;
+  border-radius: 40px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.logo {
+  width: 80px;
+}
+
+/* Chessboard */
+.board {
+  position: relative;
+  margin: auto;
+  top: 100px;
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
+  background-image: url("https://img.freepik.com/free-photo/luxury-white-marble-texture-background-decorative-design-pattern-art-work-marble-with-high-resolution_24076-876.jpg");
+  border: 10px solid #222121;
+  width: 100vw;
+  height: 100vw;
+  max-width: 480px;
+  max-height: 480px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+
+.box1:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box2:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Chess Pieces*/
+.box1:nth-child(n):nth-child(-n+8),
+.box2:nth-child(n+9):nth-child(-n+16),
+.box1:nth-child(n+49):nth-child(-n+56),
+.box2:nth-child(n+57):nth-child(-n+64) {
+  text-align: center;
+}
+
+span {
+  font-size: 30px;
+}
+
+.box1:nth-child(n):nth-child(-n+8),
+.box2:nth-child(n+9):nth-child(-n+16) {
+  color: black;
+}
+
+.box1:nth-child(n+49):nth-child(-n+56),
+.box2:nth-child(n+57):nth-child(-n+64) {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */
